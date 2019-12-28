@@ -1,21 +1,52 @@
 .footerArea{
-    margin-top:15px;
     float: left;
     width: 100%;
-    min-height: 191px;
-    background-image: url('/assets/images/content/footer.jpg');
+    min-height: 220px;
+    background-color: #111111;
     position: relative;
+    padding-bottom: 40px;
 }
-.visa_footer{
-    background-image: url('/assets/images/content/visa.png');
-    width: 304px;
-    min-height: 20px;
-    bottom:0px;
+.linkline_footer{
+    color: #CBA95E !important;
+}
+.footerArea .container{
+    background-color: unset;
+}
+.footer_tel{
+    margin-top:10px;
+}
+.footer_line{
+    margin-top:5px;
+}
+.visa_footer {
+    background-image: url(/assets/images/footer/visa.png);
+    width: 320px;
+    background-size: 100% auto;
+    min-height: 50px;
+    bottom: 0px;
     float: right;
     background-repeat: no-repeat;
-    position: absolute;
     right: 15px;
     bottom: 15px;
+    margin-left:30px;
+    margin-top: 15px;
+    clear: left;
+    float: left;
+    margin-bottom: 30px;
+}
+.bank_footer {
+    background-image: url(/assets/images/footer/banking2.png);
+    width: 420px;
+    min-height: 50px;
+    bottom: 0px;
+    float: right;
+    background-repeat: no-repeat;
+    right: 15px;
+    bottom: 15px;
+    margin-left:30px;
+    margin-top: 15px;
+    clear: left;
+    float: left;
 }
 .line_footer{
     margin-top:35px;
@@ -29,20 +60,31 @@
     width: 315px;
     padding:15px;
     padding-bottom: 50px;
+    
+}
+.footerArea .container{
+    position: relative;
 }
 .qr_footer{
-    background-image: url('/assets/images/icon/qr.png');
-    width: 100px;
-    height: 100px;
+    background-image: url('/assets/images/footer/qrcode.jpg');
+    width: 200px;
+    height: 200px;
     bottom:0px;
-    float: right;
+    float: left;
     background-repeat: no-repeat;
     background-size: contain;
     /* position: absolute; */
     right: 15px;
     bottom: 50px;
+    margin-left: 30px;
 }
-
+.copyright_footer{
+    color: #896A27;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
 .line-text_footer {
     float: right;
     position: relative;
@@ -69,11 +111,17 @@
 .menu_footer{
     float: left;
     margin-top: 15px;
-    display: none;
+    display: block;
+    clear: left;
+    
+}
+.a_link{
+    margin-top:15px;
+   font-size: 1.5em;
 }
 
 .linkFooter{
-    color: white;
+    color: #896A27;
     margin-left:30px;
 }
 @media screen and (max-width: 360px) {
@@ -91,6 +139,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .visa_footer {
+        width: 420px;
+    }
     .footerArea{
         background-size: contain;
         background-repeat: no-repeat;
@@ -102,11 +153,33 @@
         clear: right;
     }
     .menu_footer{
-        float: right;
-        margin-top: 15px;
+        float: left;
+        margin-top: -90px;
         margin-bottom: 8px;
         margin-right: 15px;
+        margin-left:0px;
         display: block;
+        clear:unset;
+    }
+    .visa_footer {
+      
+        margin-top: 0px;
+        clear: unset;
+        margin-left:unset;
+        margin-bottom: 0px;
+    }
+    .bank_footer {
+        margin-top: -70px;
+        clear: unset;
+        margin-left:unset;
     }
        
+    .copyright_footer{
+        color: #896A27;
+        font-size: 1em;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        left:unset;
+    }
 }

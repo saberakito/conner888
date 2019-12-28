@@ -104,8 +104,8 @@ export class HomeComponent implements OnInit {
   //   // { url: '/assets/images/content/slide3.jpg' }
   // ];
   imageUrls = [
-   // { img: "/assets/images/bg_slide/slide1.jpg" },  
-    // { img: "/assets/images/bg_slide/slide2.jpg" },
+   // { img: "/assets/images/bg_slide/1.gif" },  
+   // { img: "/assets/images/bg_slide/2.gif" },
   ];
   public slideData:slideData[];
   constructor(private todoServcie:TodoService,private router:Router) { }
